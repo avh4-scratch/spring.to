@@ -12,7 +12,19 @@ Dependencies:
  - `org.springframework.boot:spring-boot-starter-web` Web stuff
  - `javax.inject:javax.inject:1`
 
-## "Integration tests"
+## Integration tests
+
+ - `org.fluentlenim:fluentlenium-core:0.9.2`
+ - `org.fluentlenim:fluentlenium-assertj:0.9.2`
+
+**IntegrationTestBase.java**
+```java
+public abstract class IntegrationTestBase extends FluentTest {
+}
+```
+ 
+
+## Controller tests
 
  - `org.assertj:assertj-core:1.5.0` Fluent assert syntax
  - `org.springframework:spring-test` test
